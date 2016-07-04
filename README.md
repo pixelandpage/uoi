@@ -1,46 +1,18 @@
 # uoi
 An app to help make getting money from your friends easier
 
-### PROBLEM:
-"Social awkwardness of asking for money owed"
-"Remembering amounts owed"
+### What it does
+Eliminating the social awkwardness of managing IOUs. Simply set up an IOU when you lend someone money or pay for a meal and this handy app sends IOU reminder emails to their inbox. No one forgets who or what they owe and there's no need to ask for the money back.
 
-### USER STORIES:
-GP = Generous Person / UF = Useless Friend / UOI = You Owe I
+### How it works
+
+- Clone this repo
+- Navigate into it and then run the following commands
 ```
-As a GP
-So I can manage my UOI
-I want to sign up to UOI
-
-As a GP
-So I can get money
-I want to create a UOI
-
-As a GP
-So my UF can pay me
-I want to add their details
-
-As a GP
-So I can see who else is a GP
-I want to receive notifications of payments
-
-As a GP
-To make UF into GP
-I want to spam them
-
-As a UF
-So I don't forget to pay
-I want to receive notification
-
-As a UF
-So I can become a GP
-I want payments to be easy
-
-As a UF
-So I don't pay twice (or more)
-I want to be protected from paying more than once
-
-As a UF
-When i become a GP
-I don't want to receive spam with notifications
+bundle
+rake db:create
+rake db:migrate
+rails s
 ```
+- visit [local host 3000](http://localhost:3000/users/sign_in)
+- Sign up and start creating IOUs
